@@ -43,6 +43,13 @@ app.get('/about',(request,response) => {
     })
 })
 
+app.get('/projects',(request,response) => {
+    response.render('projects.hbs',{
+        pageTitle       :   'Projects Page',
+        someParagraph   :   'This is my projects page'
+    })
+})
+
 app.get('/bad',(req,res) => {
     res.send(
         {
